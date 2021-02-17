@@ -24,10 +24,10 @@ namespace LesTableauxExo1
 
             string[] week = new string[] { "Lundi", "Mardi", "Mercredi", "Jedi", "Vendredi", "Samedi" };
 
-            Console.WriteLine("Contenu de l'indice 1 : " + week[1] + " \n + " +
+            Console.WriteLine("Contenu de l'indice 1 : " + week[1] + "\n" +
                 "Contenu de l'indice 4 : " + week[4]);
 
-            Console.WriteLine("Contenu du 1er élément : " + week[0] + " \n + " +
+            Console.WriteLine("Contenu du 1er élément : " + week[0] + "\n" +
                 "Contenu du 4e élément : " + week[3]);
 
             week[3] = "Jeudi";
@@ -37,11 +37,11 @@ namespace LesTableauxExo1
             Array.Resize<string>(ref week, 7);
             week[6] = "Dimanche";
 
-            Console.WriteLine(" Ajout du 7e jour :" + week[6]);
+            Console.WriteLine("Ajout du 7e jour :" + week[6]);
 
             for (int index = 0; index < week.Length ; index++)
             {             
-                System.Console.WriteLine(week[index]);
+                Console.WriteLine(week[index]);
             };
 
         }
