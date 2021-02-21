@@ -22,7 +22,7 @@ namespace LesTableauxExo1
 
             
 
-            string[] week = new string[] { "Lundi", "Mardi", "Mercredi", "Jedi", "Vendredi", "Samedi" };
+            string[] week = new string[] {"Lundi", "Mardi", "Mercredi", "Jedi", "Vendredi", "Samedi"};
 
             Console.WriteLine("Contenu de l'indice 1 : " + week[1] + "\n" +
                 "Contenu de l'indice 4 : " + week[4]);
@@ -39,11 +39,15 @@ namespace LesTableauxExo1
 
             Console.WriteLine("Ajout du 7e jour :" + week[6]);
 
-            for (int index = 0; index < week.Length ; index++)
+            foreach(string day in week)
+            {
+                Console.WriteLine(day);
+            }
+
+           /* for (int index = 0; index < week.Length ; index++)
             {             
                 Console.WriteLine(week[index]);
-            };
-
+            }*/
         }
     }
 }
